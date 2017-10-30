@@ -9,7 +9,7 @@
       var ValidPassword = $('#password').val() === 'allsumm'; // Password validate
 
       if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
-          window.location = "/loggedin.html"; // go to home.html
+          window.location = "http://www.kobakhit.com/allsum/loggedin.html"; // go to home.html
       }
       else {
           $('#loginErrorMsg').removeClass('hide'); // show error msg

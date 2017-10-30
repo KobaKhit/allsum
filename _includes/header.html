@@ -1,12 +1,53 @@
 <header id="top" class="header">
-  <div class="text-vertical-center" style = "color: white;  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
-    <h1>AllSUMM</h1>
-    <h3>The future is ALLSUMM</h3>
-    <br>
-    <div class="btn btn-dark btn-lg">Login</div>
-    <br>
-    <div class="btn btn-dark btn-lg">Register</div>
-    <br>
-    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-  </div>
+    <div class="text-vertical-center" style = "color: white;  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+         <h1 style='font-size:2000%;display:inline'>A</h1>
+        <h1 style='font-size:1000%;display:inline'>llSUMM</h1>
+        <h3>The future is ALLSUMM</h3>
+        <br>
+        <button type="button" class="btn btn-primary btn-dark btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm">Login/Signup</button>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    </div>
+
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Login">
+        <div id="login-overlay" class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Login to ALLSUMM.com</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <div class="well">
+                              <form id="loginForm" novalidate="novalidate">
+                                  <div class="form-group">
+                                      <label for="username" class="control-label">Username</label>
+                                      <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="password" class="control-label">Password</label>
+                                      <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <div id="loginErrorMsg" class="alert alert-error hide" style = 'color:red'>Wrong username or password</div>
+                                  <div class="checkbox">
+                                      <label>
+                                          <input type="checkbox" name="remember" id="remember"> Remember login
+                                      </label>
+                                      <p class="help-block">(if this is a private computer)</p>
+                                  </div>
+                                  <button id = 'submit' type="submit" class="btn btn-success btn-block">Login</button>
+                                  <!-- <a href="/forgot/" class="btn btn-default btn-block">Help to login</a> -->
+                                  <button href="/new-customer/" class="btn btn-block">Sign up</button></p>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
 </header>

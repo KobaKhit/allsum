@@ -1,3 +1,21 @@
+// Koba js
+  $('#username').focus();
+
+  $('#submit').click(function() {
+
+      event.preventDefault(); // prevent PageReLoad
+
+      var ValidEmail = $('#username').val() === 'nathan'; // User validate
+      var ValidPassword = $('#password').val() === 'allsumm'; // Password validate
+
+      if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
+          window.location = "/loggedin.html"; // go to home.html
+      }
+      else {
+          $('#loginErrorMsg').removeClass('hide'); // show error msg
+      }
+  });
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
   e.preventDefault();
